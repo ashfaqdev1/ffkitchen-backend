@@ -2,7 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const app = require("./app");
 console.log(process.env.MONGO_URI);
-const { DB } = require("../backend/config/db");
+const { DB } = require("./config/db");
 DB();
 
 app.listen(
