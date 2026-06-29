@@ -14,7 +14,7 @@ const allowedOrigins = [
   "https://ffkitchen.com",
   "http://localhost:5174",
   "https://ffkitchen-clientside.vercel.app",
-  "https://ffkitchen-admin-frontend.vercel.app",
+  "https://ffkitchen-admin-frontend-x1l4-aon93df6q-ashfaqdev1s-projects.vercel.app",
 ];
 
 const corsOptions = {
