@@ -12,6 +12,7 @@ const { protect } = require("../register/login");
 const { uploadToCloudinary } = require("../config/cloudinaryUpload");
 const {
   deleteFromCloudinary,
+  deleteImageCloudinary,
 } = require("../Middlewares/deleteImageMiddleWare");
 
 const storage = multer.memoryStorage();
@@ -30,11 +31,11 @@ router
   .patch(
     "/edit/:id",
     protect,
-    deleteFromCloudinary,
     upload.single("image"),
+    deleteFromCloudinary,
     uploadToCloudinary,
     editProduct,
   )
-  .delete("/delete/:id", protect, deleteFromCloudinary, deleteProduct);
+  .delete("/delete/:id", protect, deleteImageCloudinary, deleteProduct);
 
 module.exports = router;
