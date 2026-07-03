@@ -11,12 +11,8 @@ const cors = require("cors");
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://ffkitchen.com",
   "http://localhost:5174",
-  "https://ffkitchen-clientside.vercel.app",
-  "https://ffkitchen-admin-frontend-x1l4.vercel.app",
-  "https://ffkitchen-admin-frontend-x1l4-aon93df6q-ashfaqdev1s-projects.vercel.app",
-  "https://ffkitchen-clientside-852w.vercel.app",
+  "https://ffkitchen.duckdns.org",
 ];
 
 const corsOptions = {
